@@ -61,11 +61,4 @@ public class Song {
 		return Objects.equals(movieName, other.movieName) && Objects.equals(songName, other.songName);
 	}
 	
-	
-	
-	public static void main(String [] args) {
-		
-		
-		
-	}
 }

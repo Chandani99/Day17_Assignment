@@ -12,7 +12,7 @@ public class Main {
 		Scanner sc= new Scanner(System.in);
 		
 		List <Song> song1=new ArrayList<>();
-		for(int i=1; i<=2; i++) {
+		for(int i=1; i<=4; i++) {
 			System.out.println("Enter movie name");
 			
 			String movieNa=sc.next();
