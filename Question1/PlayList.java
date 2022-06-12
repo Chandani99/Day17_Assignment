@@ -7,12 +7,13 @@ public class PlayList {
 
 	List<Song> songs = new ArrayList<>();
 	public void addSong(Song song) {
-		if(songs.add(song)){
 		
-		System.out.println("Song is added");
+		if(!songs.contains(song)){
+			songs.add(song);
+			System.out.println("Song is added..");
 		}
 		else {
-			System.out.println("Duplicate song");
+			System.out.println("Duplicate song..");
 		}
 		
 	}

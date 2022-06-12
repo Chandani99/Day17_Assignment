@@ -11,19 +11,26 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in);
 		
-        Set <Song> song= new HashSet<>();
+		List <Song> song1=new ArrayList<>();
+		for(int i=1; i<=2; i++) {
+			System.out.println("Enter movie name");
+			
+			String movieNa=sc.next();
+			
+	        System.out.println("Enter song name");
+			
+			String songNa=sc.next();
+			
+			song1.add(new Song(movieNa,songNa));
+		}
 		
-		song.add(new Song("Om shanti om","Ankho me teri.."));
-		song.add(new Song("Kranti","dilwale dilwale tera nam kya h"));
-		song.add(new Song("The Legend of Bhagat singh","Mera rang de basnati"));
 		
-		song.add(new Song("The Legend of Bhagat singh","Mera rang de basnati"));
 		
-		List <Song> song1=new ArrayList<>(song);
 		PlayList pl=new PlayList();
+		
 		for(int i=0; i<song1.size(); i++) {
 			pl.addSong(song1.get(i));
-
+			
 		}
 		
 		for(int j=0; j<pl.songs.size(); j++) {
